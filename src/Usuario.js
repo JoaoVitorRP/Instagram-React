@@ -1,13 +1,16 @@
+import ImagemUsuario from "./ImagemUsuario";
+
+import ArrobaUsuario from "./ArrobaUsuario";
+
+import NomeUsuario from "./NomeUsuario";
+
 export default function Usuario() {
   return (
     <div class="usuario">
-      <img src="assets/img/catanacomics.svg" />
+      <ImagemUsuario imagem="assets/img/catanacomics.svg"/>
       <div class="texto">
-        <strong>catanacomics</strong>
-        <span>
-          Catana
-          <ion-icon name="pencil"></ion-icon>
-        </span>
+        <ArrobaUsuario arroba="catanacomics"/>
+        <NomeUsuario nome="Catana"/>
       </div>
     </div>
   );
